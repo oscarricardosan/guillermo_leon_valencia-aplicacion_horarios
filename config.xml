@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "osg.calculadora.retencionfuente_e_ica"
+        versionCode = "20"
+        version     = "1.3.37"
+>
+    <!-- versionCode es un atributo opcional
+		 y solo es utilizado por Android -->
+
+    <name>Calculadora de retenciones</name>
+
+    <description>Calculadora de retenciones</description>
+
+    <author href="http://savne.net/" email="oscar.sanchez@savne.net">Oscar Sanchez</author>
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <allow-navigation href="*" subdomains="true" />
+    <allow-navigation href="*" />
+
+    <gap:platform name="android" />
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
+    <plugin spec="https://github.com/apache/cordova-plugin-whitelist" source="git"/>
+    <engine name="android" spec="^7.1.1" />
+
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="false" />
+
+    <icon src="images/icon.png" />
+
+
+
+    <allow-navigation href="https://calculadora-retenciones-server.savne.net/*" />
+    <allow-navigation href="*" />
+
+
+    <access origin="https://calculadora-retenciones-server.savne.net" />
+    <allow-intent href="https://calculadora-retenciones-server.savne.net" />
+    <allow-navigation href="calculadora-retenciones-server.savne.net" subdomains="true" />
+
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" subdomains="true" />
+
+</widget>

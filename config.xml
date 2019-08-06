@@ -29,7 +29,7 @@
     <allow-navigation href="*" />
 
     <gap:platform name="android" />
-    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#3.0.x" source="git"/>
     <plugin spec="https://github.com/apache/cordova-plugin-whitelist" source="git"/>
     <engine name="android" spec="^5.0.0" />
 

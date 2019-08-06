@@ -31,7 +31,7 @@
     <gap:platform name="android" />
     <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser" source="git"/>
     <plugin spec="https://github.com/apache/cordova-plugin-whitelist" source="git"/>
-    <engine name="android" spec="^7.1.1" />
+    <engine name="android" spec="^5.0.0" />
 
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="false" />

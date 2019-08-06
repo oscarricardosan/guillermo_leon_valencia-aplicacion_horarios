@@ -38,7 +38,7 @@
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name='pgb-builder-version' value='2' />
 
-    <icon src="images/icon.png" />
+    <icon src="www/images/icon.png" />
 
 
 

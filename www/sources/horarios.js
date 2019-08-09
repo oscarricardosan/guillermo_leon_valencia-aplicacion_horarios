@@ -1,10 +1,4 @@
 
-/**
- * baseUvt (undefined)=> no aplica
- * baseEnPesos (undefined)=> 100%
- * https://www.abcfinanzas.com/wp-content/uploads/2016/12/Tabla-Retenci%C3%B3n-en-la-fuente-2017.pdf
- * https://www.abcfinanzas.com/finanzas-personales/impuestos/tabla-retencion-la-fuente-ano-2018
- */
 var horariosSource= [
     //1001 - Lunes
     {"curso": "1001", "materia": "TRIGO", "hora": "1", "salon": "S_5", "profesor": "05-Mercedez Martínez", "dia": "Lunes"},
@@ -223,6 +217,9 @@ var horariosSource= [
     {"curso": "1007", "materia": "ING_Bas", "hora": "4", "salon": "S_19", "profesor": "Alba N Salamanca", "dia": "Lunes"},
     {"curso": "1007", "materia": "TRIGO", "hora": "5", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Lunes"},
     {"curso": "1007", "materia": "CPE", "hora": "6", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Lunes"},
+    {"curso": "1007", "materia": "MANTENIMIENTO", "hora": "T1", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Lunes"},
+    {"curso": "1007", "materia": "MANTENIMIENTO", "hora": "T2", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Lunes"},
+    {"curso": "1007", "materia": "MANTENIMIENTO", "hora": "T3", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Lunes"},
     //1007 - Martes
     {"curso": "1007", "materia": "FILO", "hora": "1", "salon": "S_19", "profesor": "19-Vilma Navarro", "dia": "Martes"},
     {"curso": "1007", "materia": "FILO", "hora": "2", "salon": "S_19", "profesor": "19-Vilma Navarro", "dia": "Martes"},
@@ -230,8 +227,13 @@ var horariosSource= [
     {"curso": "1007", "materia": "TECNO", "hora": "4", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Martes"},
     {"curso": "1007", "materia": "LCAS", "hora": "5", "salon": "S_10", "profesor": "Esperanza Orozco", "dia": "Martes"},
     {"curso": "1007", "materia": "QUIM", "hora": "6", "salon": "S_11", "profesor": "11-Lilia Montoya", "dia": "Martes"},
+    {"curso": "1007", "materia": "REDES", "hora": "T1", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Martes"},
+    {"curso": "1007", "materia": "REDES", "hora": "T2", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Martes"},
+    {"curso": "1007", "materia": "REDES", "hora": "T3", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Martes"},
+    {"curso": "1007", "materia": "APLICACIONES", "hora": "T4", "salon": "S_5", "profesor": "S5-Rosa Guerrero", "dia": "Martes"},
+    {"curso": "1007", "materia": "APLICACIONES", "hora": "T5", "salon": "S_5", "profesor": "S5-Rosa Guerrero", "dia": "Martes"},
     //1007 - Miercoles
-    {"curso": "1007", "materia": "ETICA", "hora": "1", "salon": "S_1", "profesor": "Nancy Cobariza", "dia": "Miercoles"},
+    {"curso": "1007", "materia": "ETICA", "hora": "1", "salon": "S_1", "profesor": "Nancy Combariza", "dia": "Miercoles"},
     {"curso": "1007", "materia": "FIS", "hora": "2", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Miercoles"},
     {"curso": "1007", "materia": "FIS", "hora": "3", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Miercoles"},
     {"curso": "1007", "materia": "CPE", "hora": "4", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Miercoles"},
@@ -251,6 +253,13 @@ var horariosSource= [
     {"curso": "1007", "materia": "ING_Bas", "hora": "4", "salon": "S_20", "profesor": "Alba N Salamanca", "dia": "Viernes"},
     {"curso": "1007", "materia": "TRIGO", "hora": "5", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Viernes"},
     {"curso": "1007", "materia": "TRIGO", "hora": "6", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Viernes"},
+    {"curso": "1007", "materia": "SENA", "hora": "T1", "salon": "S_4", "profesor": "Freddy Velandia", "dia": "Viernes"},
+    {"curso": "1007", "materia": "SENA", "hora": "T2", "salon": "S_4", "profesor": "Freddy Velandia", "dia": "Viernes"},
+    {"curso": "1007", "materia": "SENA", "hora": "T3", "salon": "S_4", "profesor": "Freddy Velandia", "dia": "Viernes"},
+    {"curso": "1007", "materia": "SENA", "hora": "T4", "salon": "S_4", "profesor": "Freddy Velandia", "dia": "Viernes"},
+    {"curso": "1007", "materia": "SENA", "hora": "T5", "salon": "S_4", "profesor": "Freddy Velandia", "dia": "Viernes"},
+
+
     //1008 - Lunes
     {"curso": "1008", "materia": "TRIGO", "hora": "1", "salon": "s_4", "profesor": "04-Soraya Fonseca", "dia": "Lunes"},
     {"curso": "1008", "materia": "LCRIT", "hora": "2", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Lunes"},
@@ -258,6 +267,11 @@ var horariosSource= [
     {"curso": "1008", "materia": "LCAS", "hora": "4", "salon": "S_3", "profesor": "Esperanza Orozco", "dia": "Lunes"},
     {"curso": "1008", "materia": "CPE", "hora": "5", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Lunes"},
     {"curso": "1008", "materia": "ARTIS", "hora": "6", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Lunes"},
+    {"curso": "1008", "materia": "REDES", "hora": "T1", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Lunes"},
+    {"curso": "1008", "materia": "REDES", "hora": "T2", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Lunes"},
+    {"curso": "1008", "materia": "REDES", "hora": "T3", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Lunes"},
+    {"curso": "1008", "materia": "APLICACIONES", "hora": "T4", "salon": "S_5", "profesor": "S5-Rosa Guerrero", "dia": "Lunes"},
+    {"curso": "1008", "materia": "APLICACIONES", "hora": "T5", "salon": "S_5", "profesor": "S5-Rosa Guerrero", "dia": "Lunes"},
     //1008 - Martes
     {"curso": "1008", "materia": "EDFIS", "hora": "1", "salon": "", "profesor": "Angela Morales", "dia": "Martes"},
     {"curso": "1008", "materia": "RELIG", "hora": "2", "salon": "S_12", "profesor": "Edward Estupiñan", "dia": "Martes"},
@@ -265,6 +279,10 @@ var horariosSource= [
     {"curso": "1008", "materia": "FILO", "hora": "4", "salon": "S_19", "profesor": "19-Vilma Navarro", "dia": "Martes"},
     {"curso": "1008", "materia": "FIS", "hora": "5", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Martes"},
     {"curso": "1008", "materia": "FIS", "hora": "6", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Martes"},
+    {"curso": "1008", "materia": "MANTENIMIENTO", "hora": "T1", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Martes"},
+    {"curso": "1008", "materia": "MANTENIMIENTO", "hora": "T2", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Martes"},
+    {"curso": "1008", "materia": "MANTENIMIENTO", "hora": "T3", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Martes"},
+    {"curso": "1008", "materia": "MANTENIMIENTO", "hora": "T4", "salon": "S_4", "profesor": "S5-Rosa Guerrero", "dia": "Martes"},
     //1008 - Miercoles
     {"curso": "1008", "materia": "TECNO", "hora": "1", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Miercoles"},
     {"curso": "1008", "materia": "TECNO", "hora": "2", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Miercoles"},
@@ -275,7 +293,7 @@ var horariosSource= [
     //1008 - Jueves
     {"curso": "1008", "materia": "QUIM", "hora": "1", "salon": "S_11", "profesor": "11-Lilia Montoya", "dia": "Jueves"},
     {"curso": "1008", "materia": "EDFIS", "hora": "2", "salon": "", "profesor": "Angela Morales", "dia": "Jueves"},
-    {"curso": "1008", "materia": "ETICA", "hora": "3", "salon": "S_8", "profesor": "Nancy Cobariza", "dia": "Jueves"},
+    {"curso": "1008", "materia": "ETICA", "hora": "3", "salon": "S_8", "profesor": "Nancy Combariza", "dia": "Jueves"},
     {"curso": "1008", "materia": "LCAS", "hora": "4", "salon": "S_3", "profesor": "Esperanza Orozco", "dia": "Jueves"},
     {"curso": "1008", "materia": "CPE", "hora": "5", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Jueves"},
     {"curso": "1008", "materia": "CPE", "hora": "6", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Jueves"},
@@ -286,6 +304,13 @@ var horariosSource= [
     {"curso": "1008", "materia": "APLIC 1", "hora": "4", "salon": "SALA_6", "profesor": "S5-Rosa Guerrero", "dia": "Viernes"},
     {"curso": "1008", "materia": "QUIM", "hora": "5", "salon": "S_11", "profesor": "11-Lilia Montoya", "dia": "Viernes"},
     {"curso": "1008", "materia": "QUIM", "hora": "6", "salon": "S_11", "profesor": "11-Lilia Montoya", "dia": "Viernes"},
+    {"curso": "1008", "materia": "SENA", "hora": "T1", "salon": "S_8", "profesor": "Alexander Calixto", "dia": "Viernes"},
+    {"curso": "1008", "materia": "SENA", "hora": "T2", "salon": "S_8", "profesor": "Alexander Calixto", "dia": "Viernes"},
+    {"curso": "1008", "materia": "SENA", "hora": "T3", "salon": "S_8", "profesor": "Alexander Calixto", "dia": "Viernes"},
+    {"curso": "1008", "materia": "SENA", "hora": "T4", "salon": "S_8", "profesor": "Alexander Calixto", "dia": "Viernes"},
+    {"curso": "1008", "materia": "SENA", "hora": "T5", "salon": "S_8", "profesor": "Alexander Calixto", "dia": "Viernes"},
+
+
     //1009 - Lunes
     {"curso": "1009", "materia": "CPE", "hora": "1", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Lunes"},
     {"curso": "1009", "materia": "TRIGO", "hora": "2", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Lunes"},
@@ -293,6 +318,11 @@ var horariosSource= [
     {"curso": "1009", "materia": "FIS", "hora": "4", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Lunes"},
     {"curso": "1009", "materia": "ING_Bas", "hora": "5", "salon": "S_13", "profesor": "13-Adriana Saenz", "dia": "Lunes"},
     {"curso": "1009", "materia": "ING_Bas", "hora": "6", "salon": "S_13", "profesor": "13-Adriana Saenz", "dia": "Lunes"},
+    {"curso": "1009", "materia": "SENA", "hora": "T1", "salon": "S_8", "profesor": "Andrea Gonzalez", "dia": "Lunes"},
+    {"curso": "1009", "materia": "SENA", "hora": "T2", "salon": "S_8", "profesor": "Andrea Gonzalez", "dia": "Lunes"},
+    {"curso": "1009", "materia": "SENA", "hora": "T3", "salon": "S_8", "profesor": "Andrea Gonzalez", "dia": "Lunes"},
+    {"curso": "1009", "materia": "SENA", "hora": "T4", "salon": "S_8", "profesor": "Andrea Gonzalez", "dia": "Lunes"},
+    {"curso": "1009", "materia": "SENA", "hora": "T5", "salon": "S_8", "profesor": "Andrea Gonzalez", "dia": "Lunes"},
     //1009 - Martes
     {"curso": "1009", "materia": "LCAS", "hora": "1", "salon": "S_3", "profesor": "Esperanza Orozco", "dia": "Martes"},
     {"curso": "1009", "materia": "LCAS", "hora": "2", "salon": "S_3", "profesor": "Esperanza Orozco", "dia": "Martes"},
@@ -306,7 +336,10 @@ var horariosSource= [
     {"curso": "1009", "materia": "TECNO", "hora": "3", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Miercoles"},
     {"curso": "1009", "materia": "TECNO", "hora": "4", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Miercoles"},
     {"curso": "1009", "materia": "RELIG", "hora": "5", "salon": "S_16", "profesor": "Edward Estupiñan", "dia": "Miercoles"},
-    {"curso": "1009", "materia": "ETICA", "hora": "6", "salon": "S_1", "profesor": "Nancy Cobariza", "dia": "Miercoles"},
+    {"curso": "1009", "materia": "ETICA", "hora": "6", "salon": "S_1", "profesor": "Nancy Combariza", "dia": "Miercoles"},
+    {"curso": "1009", "materia": "MANTENIMIENTO", "hora": "T1", "salon": "S_6", "profesor": "S5-Rosa Guerrero", "dia": "Miercoles"},
+    {"curso": "1009", "materia": "MANTENIMIENTO", "hora": "T2", "salon": "S_6", "profesor": "S5-Rosa Guerrero", "dia": "Miercoles"},
+    {"curso": "1009", "materia": "MANTENIMIENTO", "hora": "T3", "salon": "S_6", "profesor": "S5-Rosa Guerrero", "dia": "Miercoles"},
     //1009 - Jueves
     {"curso": "1009", "materia": "ARTIS", "hora": "1", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Jueves"},
     {"curso": "1009", "materia": "QUIM", "hora": "2", "salon": "S_11", "profesor": "11-Lilia Montoya", "dia": "Jueves"},
@@ -314,6 +347,11 @@ var horariosSource= [
     {"curso": "1009", "materia": "FILO", "hora": "4", "salon": "S_19", "profesor": "19-Vilma Navarro", "dia": "Jueves"},
     {"curso": "1009", "materia": "LCAS", "hora": "5", "salon": "S_3", "profesor": "Esperanza Orozco", "dia": "Jueves"},
     {"curso": "1009", "materia": "EDFIS", "hora": "6", "salon": "", "profesor": "Angela Morales", "dia": "Jueves"},
+    {"curso": "1009", "materia": "REDES", "hora": "T1", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Jueves"},
+    {"curso": "1009", "materia": "REDES", "hora": "T2", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Jueves"},
+    {"curso": "1009", "materia": "REDES", "hora": "T3", "salon": "S_5", "profesor": "S6-Yadith Mesa", "dia": "Jueves"},
+    {"curso": "1009", "materia": "APLICACIONES", "hora": "T4", "salon": "S_5", "profesor": "S5-Rosa Guerrero", "dia": "Jueves"},
+    {"curso": "1009", "materia": "APLICACIONES", "hora": "T5", "salon": "S_5", "profesor": "S5-Rosa Guerrero", "dia": "Jueves"},
     //1009 - Viernes
     {"curso": "1009", "materia": "TRIGO", "hora": "1", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Viernes"},
     {"curso": "1009", "materia": "TRIGO", "hora": "2", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Viernes"},
@@ -335,6 +373,10 @@ var horariosSource= [
     {"curso": "1010", "materia": "FINANZAS", "hora": "4", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Martes"},
     {"curso": "1010", "materia": "LCAS", "hora": "5", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Martes"},
     {"curso": "1010", "materia": "LCAS", "hora": "6", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Martes"},
+    {"curso": "1010", "materia": "ADMINISTRACIÓN", "hora": "T1", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Martes"},
+    {"curso": "1010", "materia": "ADMINISTRACIÓN", "hora": "T2", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Martes"},
+    {"curso": "1010", "materia": "FINANZAS", "hora": "T3", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Martes"},
+    {"curso": "1010", "materia": "FINANZAS", "hora": "T4", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Martes"},
     //1010 - Miercoles
     {"curso": "1010", "materia": "LCRIT", "hora": "1", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Miercoles"},
     {"curso": "1010", "materia": "CPE", "hora": "2", "salon": "S_11", "profesor": "Ciro Millán", "dia": "Miercoles"},
@@ -349,6 +391,10 @@ var horariosSource= [
     {"curso": "1010", "materia": "QUIM", "hora": "4", "salon": "S_16", "profesor": "16-William Pita", "dia": "Jueves"},
     {"curso": "1010", "materia": "TECNO", "hora": "5", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Jueves"},
     {"curso": "1010", "materia": "TECNO", "hora": "6", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Jueves"},
+    {"curso": "1010", "materia": "PROYECTOS", "hora": "T1", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Jueves"},
+    {"curso": "1010", "materia": "PROYECTOS", "hora": "T2", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Jueves"},
+    {"curso": "1010", "materia": "ADMINISTRACIÓN", "hora": "T3", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Jueves"},
+    {"curso": "1010", "materia": "ADMINISTRACIÓN", "hora": "T4", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Jueves"},
     //1010 - Viernes
     {"curso": "1010", "materia": "ARTIS", "hora": "1", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Viernes"},
     {"curso": "1010", "materia": "LCAS", "hora": "2", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Viernes"},
@@ -356,6 +402,13 @@ var horariosSource= [
     {"curso": "1010", "materia": "TRIGO", "hora": "4", "salon": "S_4", "profesor": "04-Soraya Fonseca", "dia": "Viernes"},
     {"curso": "1010", "materia": "FIS", "hora": "5", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Viernes"},
     {"curso": "1010", "materia": "FIS", "hora": "6", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Viernes"},
+    //1010 - Sábado
+    {"curso": "1010", "materia": "SENA", "hora": "1", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Sabado"},
+    {"curso": "1010", "materia": "SENA", "hora": "2", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Sabado"},
+    {"curso": "1010", "materia": "SENA", "hora": "3", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Sabado"},
+    {"curso": "1010", "materia": "SENA", "hora": "4", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Sabado"},
+    {"curso": "1010", "materia": "SENA", "hora": "5", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Sabado"},
+
     //1011 - Lunes
     {"curso": "1011", "materia": "FIS", "hora": "1", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Lunes"},
     {"curso": "1011", "materia": "FIS", "hora": "2", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Lunes"},
@@ -370,6 +423,11 @@ var horariosSource= [
     {"curso": "1011", "materia": "ING_Bas", "hora": "4", "salon": "S_13", "profesor": "13-Adriana Saenz", "dia": "Martes"},
     {"curso": "1011", "materia": "ARTIS", "hora": "5", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Martes"},
     {"curso": "1011", "materia": "EDFIS", "hora": "6", "salon": "", "profesor": "Angela Morales", "dia": "Martes"},
+    {"curso": "1011", "materia": "ADMINISTRACIÓN", "hora": "T1", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Martes"},
+    {"curso": "1011", "materia": "ADMINISTRACIÓN", "hora": "T2", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Martes"},
+    {"curso": "1011", "materia": "FINANZAS", "hora": "T3", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Martes"},
+    {"curso": "1011", "materia": "FINANZAS", "hora": "T4", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Martes"},
+    {"curso": "1011", "materia": "PROYECTOS", "hora": "T5", "salon": "S_4", "profesor": "01-Pedro Contreras", "dia": "Martes"},
     //1011 - Miercoles
     {"curso": "1011", "materia": "CPE", "hora": "1", "salon": "S_11", "profesor": "Ciro Millán", "dia": "Miercoles"},
     {"curso": "1011", "materia": "LCAS", "hora": "2", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Miercoles"},
@@ -384,6 +442,9 @@ var horariosSource= [
     {"curso": "1011", "materia": "EDFIS", "hora": "4", "salon": "", "profesor": "Angela Morales", "dia": "Jueves"},
     {"curso": "1011", "materia": "ING_Bas", "hora": "5", "salon": "S_13", "profesor": "13-Adriana Saenz", "dia": "Jueves"},
     {"curso": "1011", "materia": "ING_Bas", "hora": "6", "salon": "S_13", "profesor": "13-Adriana Saenz", "dia": "Jueves"},
+    {"curso": "1011", "materia": "PROYECTOS", "hora": "T3", "salon": "S_4", "profesor": "01-Pedro Contreras", "dia": "Jueves"},
+    {"curso": "1011", "materia": "ADMINISTRACIÓN", "hora": "T4", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Jueves"},
+    {"curso": "1011", "materia": "ADMINISTRACIÓN", "hora": "T5", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Jueves"},
     //1011 - Viernes
     {"curso": "1011", "materia": "FILO", "hora": "1", "salon": "S_19", "profesor": "19-Vilma Navarro", "dia": "Viernes"},
     {"curso": "1011", "materia": "FILO", "hora": "2", "salon": "S_19", "profesor": "19-Vilma Navarro", "dia": "Viernes"},
@@ -391,6 +452,12 @@ var horariosSource= [
     {"curso": "1011", "materia": "ETICA", "hora": "4", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Viernes"},
     {"curso": "1011", "materia": "TECNO", "hora": "5", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Viernes"},
     {"curso": "1011", "materia": "TECNO", "hora": "6", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Viernes"},
+    //1010 - Sábado
+    {"curso": "1011", "materia": "SENA", "hora": "1", "salon": "S_3", "profesor": "Gloria Muñoz", "dia": "Sabado"},
+    {"curso": "1011", "materia": "SENA", "hora": "2", "salon": "S_3", "profesor": "Gloria Muñoz", "dia": "Sabado"},
+    {"curso": "1011", "materia": "SENA", "hora": "3", "salon": "S_3", "profesor": "Gloria Muñoz", "dia": "Sabado"},
+    {"curso": "1011", "materia": "SENA", "hora": "4", "salon": "S_3", "profesor": "Gloria Muñoz", "dia": "Sabado"},
+    {"curso": "1011", "materia": "SENA", "hora": "5", "salon": "S_3", "profesor": "Gloria Muñoz", "dia": "Sabado"},
 
 
     //1101 - Lunes
@@ -420,7 +487,7 @@ var horariosSource= [
     {"curso": "1101", "materia": "ARTIS", "hora": "3", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Jueves"},
     {"curso": "1101", "materia": "QUIM", "hora": "4", "salon": "S_21", "profesor": "21-Angelica Conde", "dia": "Jueves"},
     {"curso": "1101", "materia": "QUIM", "hora": "5", "salon": "S_21", "profesor": "21-Angelica Conde", "dia": "Jueves"},
-    {"curso": "1101", "materia": "ETICA", "hora": "6", "salon": "S_3", "profesor": "Nancy Cobariza", "dia": "Jueves"},
+    {"curso": "1101", "materia": "ETICA", "hora": "6", "salon": "S_3", "profesor": "Nancy Combariza", "dia": "Jueves"},
     //1101 - Viernes
     {"curso": "1101", "materia": "SEMIO 2", "hora": "1", "salon": "S_10", "profesor": "10-Aura Medina", "dia": "Viernes"},
     {"curso": "1101", "materia": "SEMIO 2", "hora": "2", "salon": "S_10", "profesor": "10-Aura Medina", "dia": "Viernes"},
@@ -568,7 +635,7 @@ var horariosSource= [
     {"curso": "1105", "materia": "CPE", "hora": "3", "salon": "S_17", "profesor": "17-Gloria Castro", "dia": "Viernes"},
     {"curso": "1105", "materia": "CPE", "hora": "4", "salon": "S_17", "profesor": "17-Gloria Castro", "dia": "Viernes"},
     {"curso": "1105", "materia": "EDFIS", "hora": "5", "salon": "", "profesor": "Fabio Rozo", "dia": "Viernes"},
-        {"curso": "1105", "materia": "ETICA", "hora": "6", "salon": "S_6", "profesor": "Nancy Combariza", "dia": "Viernes"},
+    {"curso": "1105", "materia": "ETICA", "hora": "6", "salon": "S_6", "profesor": "Nancy Combariza", "dia": "Viernes"},
     //1106 - Lunes
     {"curso": "1106", "materia": "RELIG", "hora": "1", "salon": "S_11", "profesor": "Edward Estupiñan", "dia": "Lunes"},
     {"curso": "1106", "materia": "CPE", "hora": "2", "salon": "S_17", "profesor": "17-Gloria Castro", "dia": "Lunes"},
@@ -639,6 +706,7 @@ var horariosSource= [
     {"curso": "1107", "materia": "QUIM", "hora": "4", "salon": "S_21", "profesor": "21-Angelica Conde", "dia": "Viernes"},
     {"curso": "1107", "materia": "ETICA", "hora": "5", "salon": "S_6", "profesor": "Nancy Combariza", "dia": "Viernes"},
     {"curso": "1107", "materia": "EDFIS", "hora": "6", "salon": "", "profesor": "Angela Morales", "dia": "Viernes"},
+
     //1108 - Lunes
     {"curso": "1108", "materia": "LO_MAT", "hora": "1", "salon": "S_6", "profesor": "06-Martín Rojas", "dia": "Lunes"},
     {"curso": "1108", "materia": "TECNO", "hora": "2", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Lunes"},
@@ -646,6 +714,8 @@ var horariosSource= [
     {"curso": "1108", "materia": "QUIM", "hora": "4", "salon": "S_16", "profesor": "16-William Pita", "dia": "Lunes"},
     {"curso": "1108", "materia": "ING_Bas", "hora": "5", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Lunes"},
     {"curso": "1108", "materia": "ING_Bas", "hora": "6", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Lunes"},
+    {"curso": "1108", "materia": "REDES", "hora": "T4", "salon": "S_4", "profesor": "S6-Yadith Mesa", "dia": "Lunes"},
+    {"curso": "1108", "materia": "REDES", "hora": "T5", "salon": "S_4", "profesor": "S6-Yadith Mesa", "dia": "Lunes"},
     //1108 - Martes
     {"curso": "1108", "materia": "FIS", "hora": "1", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Martes"},
     {"curso": "1108", "materia": "FIS", "hora": "2", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Martes"},
@@ -660,6 +730,11 @@ var horariosSource= [
     {"curso": "1108", "materia": "FILO", "hora": "4", "salon": "S_20", "profesor": "20-Victor Maldonado", "dia": "Miercoles"},
     {"curso": "1108", "materia": "LCAS", "hora": "5", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Miercoles"},
     {"curso": "1108", "materia": "LCAS", "hora": "6", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Miercoles"},
+    {"curso": "1108", "materia": "MANTENIMIENTO", "hora": "T1", "salon": "S_4", "profesor": "S6-Yadith Mesa", "dia": "Miercoles"},
+    {"curso": "1108", "materia": "MANTENIMIENTO", "hora": "T2", "salon": "S_4", "profesor": "S6-Yadith Mesa", "dia": "Miercoles"},
+    {"curso": "1108", "materia": "MANTENIMIENTO", "hora": "T3", "salon": "S_4", "profesor": "S6-Yadith Mesa", "dia": "Miercoles"},
+    {"curso": "1108", "materia": "APLICACIONES", "hora": "T4", "salon": "S_6", "profesor": "S5-Rosa Guerrero", "dia": "Miercoles"},
+    {"curso": "1108", "materia": "APLICACIONES", "hora": "T5", "salon": "S_6", "profesor": "S5-Rosa Guerrero", "dia": "Miercoles"},
     //1108 - Jueves
     {"curso": "1108", "materia": "APLIC 2", "hora": "1", "salon": "SALA_5", "profesor": "S5-Rosa Guerrero", "dia": "Jueves"},
     {"curso": "1108", "materia": "APLIC 2", "hora": "2", "salon": "SALA_5", "profesor": "S5-Rosa Guerrero", "dia": "Jueves"},
@@ -667,6 +742,8 @@ var horariosSource= [
     {"curso": "1108", "materia": "CPE", "hora": "4", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Jueves"},
     {"curso": "1108", "materia": "EDFIS", "hora": "5", "salon": "", "profesor": "Angela Morales", "dia": "Jueves"},
     {"curso": "1108", "materia": "ARTIS", "hora": "6", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Jueves"},
+    {"curso": "1108", "materia": "REDES", "hora": "T5", "salon": "S_3", "profesor": "S6-Yadith Mesa", "dia": "Jueves"},
+
     //1108 - Viernes
     {"curso": "1108", "materia": "RELIG", "hora": "1", "salon": "S_16", "profesor": "Edward Estupiñan", "dia": "Viernes"},
     {"curso": "1108", "materia": "ETICA", "hora": "2", "salon": "S_5", "profesor": "Nancy Combariza", "dia": "Viernes"},
@@ -674,6 +751,13 @@ var horariosSource= [
     {"curso": "1108", "materia": "ING_Bas", "hora": "4", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Viernes"},
     {"curso": "1108", "materia": "CALCULO", "hora": "5", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Viernes"},
     {"curso": "1108", "materia": "CALCULO", "hora": "6", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Viernes"},
+    {"curso": "1108", "materia": "SENA", "hora": "T1", "salon": "S_5", "profesor": "Omaira Figueroa", "dia": "Viernes"},
+    {"curso": "1108", "materia": "SENA", "hora": "T2", "salon": "S_5", "profesor": "Omaira Figueroa", "dia": "Viernes"},
+    {"curso": "1108", "materia": "SENA", "hora": "T3", "salon": "S_5", "profesor": "Omaira Figueroa", "dia": "Viernes"},
+    {"curso": "1108", "materia": "SENA", "hora": "T4", "salon": "S_5", "profesor": "Omaira Figueroa", "dia": "Viernes"},
+    {"curso": "1108", "materia": "SENA", "hora": "T5", "salon": "S_5", "profesor": "Omaira Figueroa", "dia": "Viernes"},
+
+
     //1109 - Lunes
     {"curso": "1109", "materia": "LCAS", "hora": "1", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Lunes"},
     {"curso": "1109", "materia": "QUIM", "hora": "2", "salon": "S_16", "profesor": "16-William Pita", "dia": "Lunes"},
@@ -681,6 +765,11 @@ var horariosSource= [
     {"curso": "1109", "materia": "ARTIS", "hora": "4", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Lunes"},
     {"curso": "1109", "materia": "CALCULO", "hora": "5", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Lunes"},
     {"curso": "1109", "materia": "CALCULO", "hora": "6", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Lunes"},
+    {"curso": "1109", "materia": "SENA", "hora": "T1", "salon": "S_7", "profesor": "Patricia Caceres", "dia": "Lunes"},
+    {"curso": "1109", "materia": "SENA", "hora": "T2", "salon": "S_7", "profesor": "Patricia Caceres", "dia": "Lunes"},
+    {"curso": "1109", "materia": "SENA", "hora": "T3", "salon": "S_7", "profesor": "Patricia Caceres", "dia": "Lunes"},
+    {"curso": "1109", "materia": "SENA", "hora": "T4", "salon": "S_7", "profesor": "Patricia Caceres", "dia": "Lunes"},
+    {"curso": "1109", "materia": "SENA", "hora": "T5", "salon": "S_7", "profesor": "Patricia Caceres", "dia": "Lunes"},
     //1109 - Martes
     {"curso": "1109", "materia": "CPE", "hora": "1", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Martes"},
     {"curso": "1109", "materia": "CPE", "hora": "2", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Martes"},
@@ -688,6 +777,8 @@ var horariosSource= [
     {"curso": "1109", "materia": "FIS", "hora": "4", "salon": "S_2", "profesor": "02-Henry Moreno", "dia": "Martes"},
     {"curso": "1109", "materia": "ING_Bas", "hora": "5", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Martes"},
     {"curso": "1109", "materia": "ING_Bas", "hora": "6", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Martes"},
+    {"curso": "1109", "materia": "REDES", "hora": "T4", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Martes"},
+    {"curso": "1109", "materia": "REDES", "hora": "T5", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Martes"},
     //1109 - Miercoles
     {"curso": "1109", "materia": "ING_Bas", "hora": "1", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Miercoles"},
     {"curso": "1109", "materia": "ING_Bas", "hora": "2", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Miercoles"},
@@ -695,6 +786,7 @@ var horariosSource= [
     {"curso": "1109", "materia": "QUIM", "hora": "4", "salon": "S_16", "profesor": "16-William Pita", "dia": "Miercoles"},
     {"curso": "1109", "materia": "FILO", "hora": "5", "salon": "S_20", "profesor": "20-Victor Maldonado", "dia": "Miercoles"},
     {"curso": "1109", "materia": "FILO", "hora": "6", "salon": "S_20", "profesor": "20-Victor Maldonado", "dia": "Miercoles"},
+    {"curso": "1109", "materia": "REDES", "hora": "T5", "salon": "S_3", "profesor": "S6-Yadith Mesa", "dia": "Miercoles"},
     //1109 - Jueves
     {"curso": "1109", "materia": "RELIG", "hora": "1", "salon": "S_16", "profesor": "Edward Estupiñan", "dia": "Jueves"},
     {"curso": "1109", "materia": "LO_MAT", "hora": "2", "salon": "S_6", "profesor": "06-Martín Rojas", "dia": "Jueves"},
@@ -709,6 +801,12 @@ var horariosSource= [
     {"curso": "1109", "materia": "CPE", "hora": "4", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Viernes"},
     {"curso": "1109", "materia": "LCAS", "hora": "5", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Viernes"},
     {"curso": "1109", "materia": "LCAS", "hora": "6", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Viernes"},
+    {"curso": "1109", "materia": "MANTENIMIENTO", "hora": "T1", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Viernes"},
+    {"curso": "1109", "materia": "MANTENIMIENTO", "hora": "T2", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Viernes"},
+    {"curso": "1109", "materia": "MANTENIMIENTO", "hora": "T3", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Viernes"},
+    {"curso": "1109", "materia": "APLICACIONES", "hora": "T4", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Viernes"},
+    {"curso": "1109", "materia": "APLICACIONES", "hora": "T5", "salon": "S_6", "profesor": "S6-Yadith Mesa", "dia": "Viernes"},
+
 
 
 
@@ -721,6 +819,11 @@ var horariosSource= [
     {"curso": "1110", "materia": "CPE", "hora": "4", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Lunes"},
     {"curso": "1110", "materia": "QUIM", "hora": "5", "salon": "S_16", "profesor": "16-William Pita", "dia": "Lunes"},
     {"curso": "1110", "materia": "QUIM", "hora": "6", "salon": "S_16", "profesor": "16-William Pita", "dia": "Lunes"},
+    {"curso": "1110", "materia": "ADMINISTRACIÓN", "hora": "T1", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Lunes"},
+    {"curso": "1110", "materia": "ADMINISTRACIÓN", "hora": "T2", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Lunes"},
+    {"curso": "1110", "materia": "PROYECTOS", "hora": "T3", "salon": "S_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Lunes"},
+    {"curso": "1110", "materia": "PROYECTOS", "hora": "T4", "salon": "S_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Lunes"},
+    {"curso": "1110", "materia": "FINANZAS", "hora": "T5", "salon": "S_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Lunes"},
 
     //1110 - Martes
     {"curso": "1110", "materia": "ING_Bas", "hora": "1", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Martes"},
@@ -737,6 +840,8 @@ var horariosSource= [
     {"curso": "1110", "materia": "FINANZAS", "hora": "4", "salon": "SALA_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Miercoles"},
     {"curso": "1110", "materia": "FINANZAS", "hora": "5", "salon": "SALA_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Miercoles"},
     {"curso": "1110", "materia": "CALCULO", "hora": "6", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Miercoles"},
+    {"curso": "1110", "materia": "ADMINISTRACIÓN", "hora": "T3", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Miercoles"},
+    {"curso": "1110", "materia": "ADMINISTRACIÓN", "hora": "T4", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Miercoles"},
 
     //1110 - Jueves
     {"curso": "1110", "materia": "LCAS", "hora": "1", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Jueves"},
@@ -752,12 +857,17 @@ var horariosSource= [
     {"curso": "1110", "materia": "TECNO", "hora": "3", "salon": "SALA_5", "profesor": "S5-Raúl Barón", "dia": "Viernes"},
     {"curso": "1110", "materia": "QUIM", "hora": "4", "salon": "S_16", "profesor": "16-William Pita", "dia": "Viernes"},
     {"curso": "1110", "materia": "CPE", "hora": "5", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Viernes"},
-    {"curso": "1110", "materia": "ETICA", "hora": "6", "salon": "S_1", "profesor": "06-Katherine Sepúlveda", "dia": "Viernes"},
+    {"curso": "1110", "materia": "ETICA", "hora": "6", "salon": "S_1", "profesor": "S6-Katherine Sepúlveda", "dia": "Viernes"},
+    {"curso": "1110", "materia": "SENA", "hora": "T1", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Viernes"},
+    {"curso": "1110", "materia": "SENA", "hora": "T2", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Viernes"},
+    {"curso": "1110", "materia": "SENA", "hora": "T3", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Viernes"},
+    {"curso": "1110", "materia": "SENA", "hora": "T4", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Viernes"},
+    {"curso": "1110", "materia": "SENA", "hora": "T5", "salon": "S_1", "profesor": "Zulma Cardozo", "dia": "Viernes"},
 
 
 
 
-    
+
     //1111 - Lunes
     {"curso": "1111", "materia": "CALCULO", "hora": "1", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Lunes"},
     {"curso": "1111", "materia": "CPE", "hora": "2", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Lunes"},
@@ -765,6 +875,10 @@ var horariosSource= [
     {"curso": "1111", "materia": "ING_Bas", "hora": "4", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Lunes"},
     {"curso": "1111", "materia": "LCAS", "hora": "5", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Lunes"},
     {"curso": "1111", "materia": "LCAS", "hora": "6", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Lunes"},
+    {"curso": "1111", "materia": "PROYECTOS", "hora": "T1", "salon": "S_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Lunes"},
+    {"curso": "1111", "materia": "PROYECTOS", "hora": "T2", "salon": "S_6", "profesor": "S6-Katherine Sepúlveda", "dia": "Lunes"},
+    {"curso": "1111", "materia": "ADMINISTRACIÓN", "hora": "T3", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Lunes"},
+    {"curso": "1111", "materia": "ADMINISTRACIÓN", "hora": "T4", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Lunes"},
 
     //1111 - Martes
     {"curso": "1111", "materia": "RELIG", "hora": "1", "salon": "S_12", "profesor": "Edward Estupiñan", "dia": "Martes"},
@@ -781,6 +895,9 @@ var horariosSource= [
     {"curso": "1111", "materia": "ING_Bas", "hora": "4", "salon": "S_8", "profesor": "08-Lorena Rojas", "dia": "Miercoles"},
     {"curso": "1111", "materia": "ARTIS", "hora": "5", "salon": "S_15", "profesor": "15-Edelmira Carvajal", "dia": "Miercoles"},
     {"curso": "1111", "materia": "EDFIS", "hora": "6", "salon": "", "profesor": "Angela Morales", "dia": "Miercoles"},
+    {"curso": "1111", "materia": "ADMINISTRACIÓN", "hora": "T1", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Miercoles"},
+    {"curso": "1111", "materia": "ADMINISTRACIÓN", "hora": "T2", "salon": "S_1", "profesor": "01-Pedro Contreras", "dia": "Miercoles"},
+    {"curso": "1111", "materia": "FINANZAS", "hora": "T3", "salon": "S_3", "profesor": "S6-Katherine Sepúlveda", "dia": "Miercoles"},
 
     //1111 - Jueves
     {"curso": "1111", "materia": "CALCULO", "hora": "1", "salon": "S_7", "profesor": "07-Dario Meza", "dia": "Jueves"},
@@ -795,6 +912,11 @@ var horariosSource= [
     {"curso": "1111", "materia": "CPE", "hora": "2", "salon": "S_9", "profesor": "09-Jeffer Bohórquez", "dia": "Viernes"},
     {"curso": "1111", "materia": "LCAS", "hora": "3", "salon": "S_3", "profesor": "03-Yhon Pava", "dia": "Viernes"},
     {"curso": "1111", "materia": "EDFIS", "hora": "4", "salon": "", "profesor": "Angela Morales", "dia": "Viernes"},
-    {"curso": "1111", "materia": "ETICA", "hora": "5", "salon": "S_1", "profesor": "06-Katherine Sepúlveda", "dia": "Viernes"},
+    {"curso": "1111", "materia": "ETICA", "hora": "5", "salon": "S_1", "profesor": "S6-Katherine Sepúlveda", "dia": "Viernes"},
     {"curso": "1111", "materia": "QUIM", "hora": "6", "salon": "S_16", "profesor": "16-William Pita", "dia": "Viernes"},
+    {"curso": "1111", "materia": "SENA", "hora": "T1", "salon": "S_3", "profesor": "Carlos Caicedo", "dia": "Viernes"},
+    {"curso": "1111", "materia": "SENA", "hora": "T2", "salon": "S_3", "profesor": "Carlos Caicedo", "dia": "Viernes"},
+    {"curso": "1111", "materia": "SENA", "hora": "T3", "salon": "S_3", "profesor": "Carlos Caicedo", "dia": "Viernes"},
+    {"curso": "1111", "materia": "SENA", "hora": "T4", "salon": "S_3", "profesor": "Carlos Caicedo", "dia": "Viernes"},
+    {"curso": "1111", "materia": "SENA", "hora": "T5", "salon": "S_3", "profesor": "Carlos Caicedo", "dia": "Viernes"},
 ];

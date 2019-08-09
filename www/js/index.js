@@ -67,7 +67,7 @@ function iniciar(){
                     return accounting.formatNumber(value);
                 },
                 formatHour: function (hour) {
-                    return '0'+hour+':00';
+                    return (hour.length==1?'0':'')+hour+':00';
                 }
             },
             watch: {
